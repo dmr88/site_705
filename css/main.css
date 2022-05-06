@@ -103,4 +103,55 @@ nav li a {
 .content .block .img img {
   width: 100%;
 }
+
+.footer .title {
+  margin-bottom: 25px;
+  font-size: 1.5em;
+}
+
+.popup-wrap {
+  background-color: #fff;
+  width: 70%;
+  padding: 15px 35px;
+  border-radius: 5px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.mfp-zoom-in {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+}
+
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0;
+}
+
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
 /*# sourceMappingURL=main.css.map */

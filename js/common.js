@@ -37,6 +37,16 @@ $(function() {
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 	
+	$('.popup').magnificPopup({
+		removalDelay: 500,
+		callbacks: {
+			beforeOpen: function() {
+				this.st.mainClass = this.st.el.attr('data-effect');
+			}
+		},
+		midClick: true
+	});
+
 });
 
 $(window).load(function() {
